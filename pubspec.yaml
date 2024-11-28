@@ -1,0 +1,82 @@
+name: lexcal
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.5.1
+  freezed_annotation: ^2.4.4
+  riverpod_annotation: ^2.3.5
+  timer_count_down: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.12
+  custom_lint: ^0.6.7
+  flutter_lints: ^4.0.0
+  freezed: ^2.5.7
+  riverpod_generator: ^2.4.3
+  riverpod_lint: ^2.3.13
+  test: ^1.25.7
+
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/aperture.png
+   - assets/clock.png
+   - assets/filter.png
+   - assets/iso.png
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Black.ttf
+          weight: 900
+        - asset: fonts/Poppins-BlackItalic.ttf
+          style: italic
+          weight: 900
+        - asset: fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: fonts/Poppins-BoldItalic.ttf
+          style: italic
+          weight: 700
+        - asset: fonts/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/Poppins-ExtraBoldItalic.ttf
+          style: italic
+          weight: 800
+        - asset: fonts/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: fonts/Poppins-ExtraLightItalic.ttf
+          style: italic
+          weight: 200
+        - asset: fonts/Poppins-Italic.ttf
+          style: italic
+          weight: 400
+        - asset: fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: fonts/Poppins-LightItalic.ttf
+          style: italic
+          weight: 300
+        - asset: fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: fonts/Poppins-MediumItalic.ttf
+          style: italic
+          weight: 500
+        - asset: fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Poppins-SemiBoldItalic.ttf
+          style: italic
+          weight: 600
+        - asset: fonts/Poppins-Thin.ttf
+          weight: 100
+        - asset: fonts/Poppins-ThinItalic.ttf
+          style: italic
+          weight: 100

@@ -1,0 +1,5 @@
+package org.limeslice.lexcal.lexcal
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity()
