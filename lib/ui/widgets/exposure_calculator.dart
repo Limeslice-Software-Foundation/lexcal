@@ -114,6 +114,7 @@ class _ExposureCalculatorState extends ConsumerState<ExposureCalculator> {
                           isoValue = iso;
                         });
                         calculateShutter();
+                        FocusManager.instance.primaryFocus?.unfocus();
                       }
                     },
                   ),
@@ -127,6 +128,7 @@ class _ExposureCalculatorState extends ConsumerState<ExposureCalculator> {
                           apertureValue = aperture;
                         });
                         calculateShutter();
+                        FocusManager.instance.primaryFocus?.unfocus();
                       }
                     },
                   ),
@@ -140,6 +142,7 @@ class _ExposureCalculatorState extends ConsumerState<ExposureCalculator> {
                           shutterSpeed = shutter.value;
                         });
                         calculateShutter();
+                        FocusManager.instance.primaryFocus?.unfocus();
                       }
                     },
                   ),
@@ -153,6 +156,7 @@ class _ExposureCalculatorState extends ConsumerState<ExposureCalculator> {
                           ndFilterValue = nd;
                         });
                         calculateShutter();
+                        FocusManager.instance.primaryFocus?.unfocus();
                       }
                     },
                   ),
