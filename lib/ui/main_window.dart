@@ -14,6 +14,7 @@
 // limitations under the License.
 import 'package:flutter/material.dart';
 
+import 'widgets/app_about_dialog.dart';
 import 'widgets/countdown.dart';
 import 'widgets/exposure_calculator.dart';
 import 'widgets/tip_list.dart';
@@ -32,9 +33,21 @@ class _MainWindowState extends State<MainWindow> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('LExCal', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),),
+        title: const Text(
+          'LExCal',
+          style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () async {
+              await AppAboutDialog.show(context);
+            },
+            icon: const Icon(Icons.info),
+          ),
+        ],
       ),
-      body: SafeArea(child: <Widget>[
+      body: SafeArea(
+          child: <Widget>[
         const ExposureCalculator(),
         const CountdownTimer(),
         const TipList(),

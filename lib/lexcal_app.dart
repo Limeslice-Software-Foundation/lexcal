@@ -16,6 +16,8 @@ import 'package:flutter/material.dart';
 
 import 'ui/main_window.dart';
 
+const Color limeGreen = Color.fromRGBO(115, 255, 75, 1);
+
 class LExCalApp extends StatelessWidget {
   const LExCalApp({super.key});
 
@@ -26,7 +28,7 @@ class LExCalApp extends StatelessWidget {
       title: 'LExCal',
       theme: ThemeData(
         brightness: Brightness.dark,
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green, brightness: Brightness.dark),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.lightGreen, brightness: Brightness.dark),
         useMaterial3: true,
         fontFamily: 'Poppins',
       ),
